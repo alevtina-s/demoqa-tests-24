@@ -47,9 +47,9 @@ public class PracticeFormTest {
         $("#uploadPicture").uploadFromClasspath("26.jpg"); //загрузка картинки
         $("#currentAddress-wrapper").$("#currentAddress").setValue("Moscow, Pushkin street, Kolotushkin house"); //ввод адреса
         $("#state").click(); //клик в поле ввода штата
-        $("#react-select-3-option-0").click(); //выбор штата (исправлено)
+        $("#stateCity-wrapper").$(byText("NCR")).click(); //выбор штата (исправлено)
         $("#city").click(); //клик в поле ввода города
-        $("#react-select-4-option-0").click(); //выбор города (исправлено)
+        $("#stateCity-wrapper").$(byText("Delhi")).click(); //выбор города (исправлено)
         $("#submit").click(); //клик на кнопку подтверждения
 
         //проверки
